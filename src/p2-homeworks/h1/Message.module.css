@@ -14,8 +14,21 @@
     flex-grow: 1;
 
 }
-.avatar{
-    border-radius:50%;
+
+.block_left:after {
+    content: '';
+    position: relative;
+    top: 20px;
+    left: -33px;
+    border: 27px solid transparent;
+    border-right: 0px solid #002200;
+    border-bottom: 20px solid #002200;
+    height: 0;
+    float: left;
+}
+
+.avatar {
+    border-radius: 50%;
     height: 80px;
     float: right
 }
@@ -23,6 +36,8 @@
 .block_left {
     flex-grow: 4;
     background: #002200;
+    margin: 5px 20px;
+    border-radius: 10px;
 }
 
 .name {
@@ -35,4 +50,6 @@
 
 .time {
     color: #a4bba0;
+    float: right;
+    margin-top: 26px;
 }
